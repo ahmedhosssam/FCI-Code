@@ -6,7 +6,7 @@ attempts = 0
 userScore = 0
 computerScore = 0
 
-while attempts < 3 :
+while attempts < 4 :
   randChoice = random.choice(choices)
   userChoice = input("What's your Choice ? 'r' for rock , 'p' for paper , 's' for scissors\n")
   if userChoice == 'r' :
@@ -24,7 +24,7 @@ while attempts < 3 :
       userScore += 1
     attempts += 1
 
-  if userChoice == 'p' :
+  elif userChoice == 'p' :
 
     if randChoice == 'r':
       print('You Won!')
@@ -36,7 +36,7 @@ while attempts < 3 :
       computerScore += 1
     attempts += 1
 
-  if userChoice == 's':
+  elif userChoice == 's':
 
     if randChoice == 'r':
       print('You Lost!')
@@ -49,6 +49,6 @@ while attempts < 3 :
     attempts += 1
 
 if userScore > computerScore :
-  print('Congrats!! You Won against the fucking computer')
+  print('Congrats!! You Won against the computer')
 else :
-  print('You Lost against the fucking computer :((')
+  print('You Lost against the computer :((')
